@@ -1,0 +1,82 @@
+/******  GLOBAL CSS VARIABLES  ******/
+
+/***  COLORS  ***/
+$grey1: #f1f2f2;
+$grey2: #d1d3d4;
+$grey3: #a7a9ac;
+$grey4: #808285;
+$grey5: #58595b;
+$grey6: #231f20;
+
+$green1: #a8ed8a;
+$green2: #3cd52e;
+
+
+/***  FONTS  ***/
+$font-display: "chalet-london-sixty", sans-serif;
+$font-para: "freight-text-pro", sans-serif;
+
+$h1: 45px;
+$h2: 35px;
+$h3: 28px;
+$h4: 22px;
+$h5: 16px;
+$h6: 12px;
+
+* {
+  font-size: 16px;
+  font-family: $font-para;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-display;
+  color: $grey5;
+}
+
+h1 { font-size: $h1 }
+h2 { font-size: $h2 }
+h3 { font-size: $h3 }
+h4 { font-size: $h4 }
+h5 { font-size: $h5 }
+h6 { font-size: $h6 }
+
+p { 
+  font-size: 16px; 
+}
+
+
+/***  MIXINS  ***/
+@mixin match-h1 {
+  font-family: $font-display;
+  font-size: $h1;
+}
+
+@mixin match-h2 {
+  font-family: $font-display;
+  font-size: $h2;
+}
+
+@mixin match-h3 {
+  font-family: $font-display;
+  font-size: $h3;
+}
+
+@mixin match-h4 {
+  font-family: $font-display;
+  font-size: $h4;
+}
+
+@mixin match-h5 {
+  font-family: $font-display;
+  font-size: $h5;
+}
+
+@mixin match-h6 {
+  font-family: $font-display;
+  font-size: $h6;
+}
+
+@mixin match-p {
+  font-family: $font-para;
+  font-size: 16px;
+}
