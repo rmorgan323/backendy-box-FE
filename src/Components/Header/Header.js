@@ -40,7 +40,10 @@ class Header extends Component {
   render() {
     return (
       <div className="header-component">
-        header
+        <h1>backendy<span className="title-span">BOX</span></h1>
+        <div className="header-right">
+          <p>Welcome, <span className="welcome-span">{this.props.user.name}</span>!</p>
+        </div>
       </div>
     ) 
   };
