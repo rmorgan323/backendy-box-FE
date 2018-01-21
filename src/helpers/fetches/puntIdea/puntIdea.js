@@ -1,7 +1,7 @@
 import getKeyFromLS from '../../getKeyFromLS';
 
 const puntIdea = async (id) => {
-  const deletedIdea = await fetch(`http://localhost:3000/api/v1/messages/${id}`, {
+  const deletedIdea = await fetch(`https://backendy-box.herokuapp.com/api/v1/messages/${id}`, {
     method: 'DELETE',
     headers: {
       "x-token": getKeyFromLS(),
