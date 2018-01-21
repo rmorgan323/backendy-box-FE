@@ -1,7 +1,7 @@
 import getKeyFromLS from '../../getKeyFromLS';
 
 const changeIdea = async (id, title, body, quality) => {
-  const updatedIdea = await fetch('http://localhost:3000/api/v1/messages/', {
+  const updatedIdea = await fetch('https://backendy-box.herokuapp.com/api/v1/messages/', {
     method: 'PUT',
     headers: {
       "x-token": getKeyFromLS(),

@@ -1,7 +1,7 @@
 import getKeyFromLS from '../../getKeyFromLS';
 
 const addIdea = async (title, body, author, author_id, quality) => {
-  const idea = await fetch('http://localhost:3000/api/v1/messages/', {
+  const idea = await fetch('https://backendy-box.herokuapp.com/api/v1/messages/', {
     method: 'POST',
     headers: {
       "x-token": getKeyFromLS(),
