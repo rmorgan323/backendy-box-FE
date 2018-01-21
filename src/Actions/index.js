@@ -23,7 +23,7 @@ export const addNewIdea = (title, body, author, author_id, quality) => async dis
     const newIdea = await addIdea(title, body, author, author_id, quality);
     dispatch(ideaToStore(newIdea));
   } catch (error) {
-    console.log(error);
+    window.location="https://backendy-box.e1.loginrocket.com/";
   }
 };
 
@@ -37,7 +37,7 @@ export const loadIdeas = () => async dispatch => {
     const ideas = await getIdeas();
     dispatch(ideasToStore(ideas));
   } catch (error) {
-    console.log(error);
+    window.location="https://backendy-box.e1.loginrocket.com/";
   }
 };
 
@@ -51,7 +51,7 @@ export const deleteIdea = (id) => async dispatch => {
     const deletedIdea = await puntIdea(id);
     dispatch(removeIdea(deletedIdea));
   } catch (error) {
-    console.log(error);
+    window.location="https://backendy-box.e1.loginrocket.com/";
   }
 }
 
@@ -65,7 +65,7 @@ export const updateIdea = (id, title, body, quality) => async dispatch => {
     const updatedIdea = await changeIdea(id, title, body, quality);
     dispatch(updateIdeaInStore(updatedIdea));
   } catch (error) {
-    console.log(error)
+    window.location="https://backendy-box.e1.loginrocket.com/";
   }
 };
 
