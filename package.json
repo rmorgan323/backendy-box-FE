@@ -2,7 +2,9 @@
   "name": "backendybox-fe",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rmorgan323.github.io/backendy-box-FE",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -13,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy" : "npm run build&&gh-pages -d build",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "react-scripts build",
