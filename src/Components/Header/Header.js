@@ -5,9 +5,6 @@ import * as actions from '../../Actions';
 import clearLocalStorage from '../../helpers/clearLocalStorage';
 
 class Header extends Component {
-  constructor() {
-    super();
-  }
 
   componentDidMount = async () => {
     await this.checkForKey();
@@ -41,7 +38,19 @@ class Header extends Component {
   render() {
     return (
       <div className="header-component">
-        <h1>backendy<span className="title-span">BOX</span></h1>
+        <div className="title-holder">
+          <h1>B</h1>
+          <h1>A</h1>
+          <h1>C</h1>
+          <h1>K</h1>
+          <h1>E</h1>
+          <h1>N</h1>
+          <h1>D</h1>
+          <h1>Y</h1>
+          <h1>B</h1>
+          <h1>O</h1>
+          <h1>X</h1>
+        </div>
         <div className="header-right">
           <p>Welcome, <span className="welcome-span">{this.props.user.name}</span>!</p>
         </div>

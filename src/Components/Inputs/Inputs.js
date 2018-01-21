@@ -40,7 +40,7 @@ class Inputs extends Component {
             name="body"
           ></input>
           <button
-            onClick={(event) => this.handleSubmit(event, this.state.title, this.state.body, this.props.user.name, this.props.user.id, 2)}
+            onClick={(event) => this.handleSubmit(event, this.state.title, this.state.body, this.props.user.name, this.props.user.id, 3)}
           >SUBMIT</button>
         </form>
       </div>

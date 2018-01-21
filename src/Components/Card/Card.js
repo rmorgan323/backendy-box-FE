@@ -26,11 +26,11 @@ const Card = ({ id, author, title, body, quality, date, deleteIdea, updateIdea }
           <button 
             className="upvote-button"
             onClick={(event) => updateIdea(event, id, title, body, quality + 1)}
-          >&#8593;</button>
+          ></button>
           <button 
             className="downvote-button"
             onClick={(event) => updateIdea(event, id, title, body, quality - 1)}
-          >&#8595;</button>
+          ></button>
           <h6>{date}</h6>
         </div>
       </div>

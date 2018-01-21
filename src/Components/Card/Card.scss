@@ -2,14 +2,14 @@
 
 .card-component {
   width: 500px;
-  padding: 10px 0 6px;
+  padding: 10px 0 17px;
   margin: 5px auto 20px;
   background-color: $grey4;
   position: relative;
 
   h4 {
     color: $green1;
-    margin: 0 15px;
+    margin: 3px 15px 0;
   }
 
   h5 {
@@ -39,7 +39,7 @@
     top: 10px;
     border: none;
     background: none;
-    color: $grey5;
+    color: darken($grey5, 6%);
     font-size: 20px;
     transition: all .2s ease-in-out;
     cursor: pointer;
@@ -48,16 +48,49 @@
   .delete-button:hover {
     color: $grey6;
   }
+
+  .upvote-button, .downvote-button {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 19px;
+    background-position: 50% 50%;
+    transition: all .2s ease-in-out;
+  }
+
+  .upvote-button {
+    top: 6px;
+    left: 62px;
+    background-image: url('assets/up-arrow.svg');
+  }
+
+  .downvote-button {
+    bottom: 4px;
+    left: 62px;
+    background-image: url('assets/down-arrow.svg');
+  }
+
+  .upvote-button:hover {
+    background-image: url('assets/up-arrow-hover.svg');
+  }
+
+  .downvote-button:hover {
+    background-image: url('assets/down-arrow-hover.svg');
+  }
 }
 
 .card-bottom {
-  background-color: $grey3;
+  background-color: $grey5;
   padding: 1px 15px 12px;
+  position: relative;
 }
 
 .para-container {
   margin-top: 10px;
-  min-height: 84px;
+  min-height: 118px;
   padding: 0 15px;
 }
 
@@ -74,12 +107,14 @@
   justify-content: space-between;
 
   h5 {
-    margin-top: 19px;
-    color: $grey2;
+    margin-top: 4px;
+    color: $grey3;
   }
 }
 
 .quality-span {
   @include match-h5;
   color: $grey1;
+  width: 114px;
+  text-align: center;
 }
