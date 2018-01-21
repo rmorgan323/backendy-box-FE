@@ -1,0 +1,85 @@
+@import '../../Variables.scss';
+
+.card-component {
+  width: 500px;
+  padding: 10px 0 6px;
+  margin: 5px auto 20px;
+  background-color: $grey4;
+  position: relative;
+
+  h4 {
+    color: $green1;
+    margin: 0 15px;
+  }
+
+  h5 {
+    margin: 15px 0 -11px;
+  }
+
+  h6 {
+    margin: 21px 0 1px;
+    color: $grey1;
+    opacity: .6;
+  }
+
+  p {
+    @include match-h5;
+    margin: 0;
+    color: $grey1;
+  }
+
+  hr {
+    border: 1px solid $grey5;
+    opacity: .3;
+  }
+
+  .delete-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    color: $grey5;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .delete-button:hover {
+    color: $grey6;
+  }
+}
+
+.card-bottom {
+  background-color: $grey3;
+  padding: 1px 15px 12px;
+}
+
+.para-container {
+  margin-top: 10px;
+  min-height: 84px;
+  padding: 0 15px;
+}
+
+.author-row {
+  text-align: right;
+
+  h5 {
+    color: $grey1;
+  }
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+
+  h5 {
+    margin-top: 19px;
+    color: $grey2;
+  }
+}
+
+.quality-span {
+  @include match-h5;
+  color: $grey1;
+}

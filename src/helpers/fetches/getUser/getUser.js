@@ -8,8 +8,9 @@ const getUser = async () => {
       "Content-Type": "application/json"
     }
   });
-  const userData = await user.json();
-  return userData[0];
+  const jsonUser = await user.json();
+  
+  return jsonUser[0];
 }
 
 export default getUser;

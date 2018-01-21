@@ -1,0 +1,98 @@
+/******  GLOBAL CSS VARIABLES  ******/
+/***  COLORS  ***/
+/***  FONTS  ***/
+* {
+  font-size: 16px;
+  font-family: "freight-text-pro", sans-serif;
+  outline: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "chalet-london-sixty", sans-serif;
+  color: #58595b;
+  line-height: 1.3; }
+
+h1 {
+  font-size: 45px; }
+
+h2 {
+  font-size: 35px; }
+
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-size: 22px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 12px; }
+
+p {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 900; }
+
+/***  MIXINS  ***/
+.card-component {
+  width: 500px;
+  padding: 10px 0 6px;
+  margin: 5px auto 20px;
+  background-color: #808285;
+  position: relative; }
+  .card-component h4 {
+    color: #a8ed8a;
+    margin: 0 15px; }
+  .card-component h5 {
+    margin: 15px 0 -11px; }
+  .card-component h6 {
+    margin: 21px 0 1px;
+    color: #f1f2f2;
+    opacity: .6; }
+  .card-component p {
+    font-family: "chalet-london-sixty", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #f1f2f2; }
+  .card-component hr {
+    border: 1px solid #58595b;
+    opacity: .3; }
+  .card-component .delete-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    color: #58595b;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer; }
+  .card-component .delete-button:hover {
+    color: #414042; }
+
+.card-bottom {
+  background-color: #a7a9ac;
+  padding: 1px 15px 12px; }
+
+.para-container {
+  margin-top: 10px;
+  min-height: 84px;
+  padding: 0 15px; }
+
+.author-row {
+  text-align: right; }
+  .author-row h5 {
+    color: #f1f2f2; }
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between; }
+  .bottom-row h5 {
+    margin-top: 19px;
+    color: #d1d3d4; }
+
+.quality-span {
+  font-family: "chalet-london-sixty", sans-serif;
+  font-size: 16px;
+  color: #f1f2f2; }

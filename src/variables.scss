@@ -6,7 +6,8 @@ $grey2: #d1d3d4;
 $grey3: #a7a9ac;
 $grey4: #808285;
 $grey5: #58595b;
-$grey6: #231f20;
+$grey6: #414042;
+$grey7: #231f20;
 
 $green1: #a8ed8a;
 $green2: #3cd52e;
@@ -26,11 +27,13 @@ $h6: 12px;
 * {
   font-size: 16px;
   font-family: $font-para;
+  outline: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-display;
   color: $grey5;
+  line-height: 1.3;
 }
 
 h1 { font-size: $h1 }
@@ -42,6 +45,8 @@ h6 { font-size: $h6 }
 
 p { 
   font-size: 16px; 
+  line-height: 1.3;
+  font-weight: 900;
 }
 
 
