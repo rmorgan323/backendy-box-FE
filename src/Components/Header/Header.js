@@ -12,6 +12,7 @@ class Header extends Component {
   componentDidMount = async () => {
     await this.checkForKey();
     await this.props.loadUser();
+    await this.props.loadIdeas();
   }
 
   checkForKey = () => {
@@ -56,6 +57,9 @@ const mapStateToProps = store => ({
 const mapDispatchToProps = dispatch => ({
   loadUser: () => {
     dispatch(actions.loadUser());
+  },
+  loadIdeas: () => {
+    dispatch(actions.loadIdeas());
   }
 });
 

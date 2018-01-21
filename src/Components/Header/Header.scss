@@ -5,16 +5,17 @@
   padding: 5px 0 3px;
   position: relative;
   border-bottom: 6px solid $grey3;
-}
 
-h1 {
-  color: $green1;
-  text-align: center;
-}
+  h1 {
+    color: $green1;
+    text-align: center;
+  }
 
-p {
-  color: $grey1;
-  margin: 0;
+  p {
+    @include match-h5;
+    color: $grey1;
+    margin: 0;
+  }
 }
 
 .header-right {
@@ -29,6 +30,7 @@ p {
 }
 
 .welcome-span {
+  @include match-h5;
   font-weight: 900;
 }
 
