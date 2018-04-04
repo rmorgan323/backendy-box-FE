@@ -1,4 +1,4 @@
-const idea = (store = [], action) => {
+const idea = (store = null, action) => {
   switch (action.type) {
     case "IDEA_TO_STORE":
       const w = [...store, action.idea].sort((a, b) => b.id - a.id);
