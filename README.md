@@ -9,7 +9,7 @@ In Backendy-Box users are logged in with Google credentials, via 3rd-party provi
 The frontend and backend including idea, design, build, and deployment were built in less than 3 days.
 
 Feel free to checkout how it works and leave me a message:
-https://rmorgan323.github.io/backendy-box-FE/
+https://backendy-box.e1.loginrocket.com/login
 
 See the backend repo at:
 https://github.com/rmorgan323/backendy-box-BE
